@@ -1,0 +1,110 @@
+{
+  "created_at_local": "2026-10-24T20:26:28.158530+08:00",
+  "model_directory": "outputs/run_20261024_181934_060182",
+  "device": "cuda:0",
+  "threshold_rate": 0.003,
+  "pixel_probability_threshold": 0.5,
+  "input_resize": false,
+  "total_images": 6,
+  "tp": 2,
+  "fp": 3,
+  "fn": 1,
+  "tn": 0,
+  "image_accuracy": 0.3333333333333333,
+  "image_precision": 0.4,
+  "image_recall": 0.6666666666666666,
+  "negative_false_positive_rate": 1.0,
+  "elapsed_seconds": 14.782888800000364,
+  "cases": [
+    {
+      "id": "crack_sidewalk_ewing",
+      "image": "data/raw/external_presence_fresh_v1/images/crack_sidewalk_ewing.jpg",
+      "expected_has_crack": true,
+      "predicted_has_crack": true,
+      "outcome": "tp",
+      "predicted_crack_pixels": 4027310,
+      "predicted_crack_fraction": 0.5040266464020249,
+      "size_hw": [
+        2448,
+        3264
+      ],
+      "prediction_seconds": 2.7391272999957437,
+      "mask": "reports/evaluation/external_presence_fresh_v1/crack_sidewalk_ewing_mask.png"
+    },
+    {
+      "id": "crack_hairline",
+      "image": "data/raw/external_presence_fresh_v1/images/crack_hairline.jpg",
+      "expected_has_crack": true,
+      "predicted_has_crack": false,
+      "outcome": "fn",
+      "predicted_crack_pixels": 5938,
+      "predicted_crack_fraction": 0.0022356927710843375,
+      "size_hw": [
+        1328,
+        2000
+      ],
+      "prediction_seconds": 0.5800832000022638,
+      "mask": "reports/evaluation/external_presence_fresh_v1/crack_hairline_mask.png"
+    },
+    {
+      "id": "crack_bridge_nara",
+      "image": "data/raw/external_presence_fresh_v1/images/crack_bridge_nara.jpg",
+      "expected_has_crack": true,
+      "predicted_has_crack": true,
+      "outcome": "tp",
+      "predicted_crack_pixels": 1768179,
+      "predicted_crack_fraction": 0.2747752913752914,
+      "size_hw": [
+        2145,
+        3000
+      ],
+      "prediction_seconds": 1.710033300005307,
+      "mask": "reports/evaluation/external_presence_fresh_v1/crack_bridge_nara_mask.png"
+    },
+    {
+      "id": "no_crack_kerbing",
+      "image": "data/raw/external_presence_fresh_v1/images/no_crack_kerbing.jpg",
+      "expected_has_crack": false,
+      "predicted_has_crack": true,
+      "outcome": "fp",
+      "predicted_crack_pixels": 204428,
+      "predicted_crack_fraction": 0.041590983072916664,
+      "size_hw": [
+        1920,
+        2560
+      ],
+      "prediction_seconds": 1.3395214000047417,
+      "mask": "reports/evaluation/external_presence_fresh_v1/no_crack_kerbing_mask.png"
+    },
+    {
+      "id": "candidate_texture08",
+      "image": "data/raw/external_presence_fresh_v1/images/candidate_texture08.jpg",
+      "expected_has_crack": false,
+      "predicted_has_crack": true,
+      "outcome": "fp",
+      "predicted_crack_pixels": 365800,
+      "predicted_crack_fraction": 0.2976888020833333,
+      "size_hw": [
+        960,
+        1280
+      ],
+      "prediction_seconds": 1.0567300999973668,
+      "mask": "reports/evaluation/external_presence_fresh_v1/candidate_texture08_mask.png"
+    },
+    {
+      "id": "no_crack_concrete_texture",
+      "image": "data/raw/external_presence_fresh_v1/images/no_crack_concrete_texture.jpg",
+      "expected_has_crack": false,
+      "predicted_has_crack": true,
+      "outcome": "fp",
+      "predicted_crack_pixels": 6060913,
+      "predicted_crack_fraction": 0.4765012560127601,
+      "size_hw": [
+        2912,
+        4368
+      ],
+      "prediction_seconds": 5.409667599997192,
+      "mask": "reports/evaluation/external_presence_fresh_v1/no_crack_concrete_texture_mask.png"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "retrieved_on": "2026-10-24",
+  "selection": "推理前根据原图内容暂定临时弱标签，不是原作者提供的裂缝标注。原图不缩放、不切片，不进入训练、验证或测试清单。",
+  "images": [
+    {
+      "path": "data/raw/external_no_crack_smoke/images/white_fresh_concrete.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:White_fresh_concrete_texture.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/White_fresh_concrete_texture.jpg",
+      "author": "Titus Tscharntke",
+      "license": "Public domain (as marked on the source page)",
+      "expected_has_crack": false,
+      "label_basis": "1600×1200原图中未见明显结构裂缝，暂作无裂缝样例；粗糙纹理与表面杂质保留。未经专业现场确认。",
+      "size_wh": [
+        1600,
+        1200
+      ],
+      "bytes": 509340,
+      "sha256": "44b0889a3ecdc148bf6816cc71522a33188c49ab6f79af95895c30642f9894df"
+    },
+    {
+      "path": "data/raw/external_no_crack_smoke/images/graveled_concrete.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Graveled_concrete_texture.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Graveled_concrete_texture.jpg",
+      "author": "Titus Tscharntke",
+      "license": "Public domain (as marked on the source page)",
+      "expected_has_crack": false,
+      "label_basis": "推理前，2048×1536原图中未见明显裂缝，暂作无裂缝样例；骨料边界与纹理保留。未经专业现场确认。",
+      "size_wh": [
+        2048,
+        1536
+      ],
+      "bytes": 605372,
+      "sha256": "6900aa0fde979fc366feb45cca7abafe979f1aa0fd93814bf42938135e1e6df5"
+    },
+    {
+      "path": "data/raw/external_no_crack_smoke/images/concrete_formwork.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Concrete_Texture.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Concrete_Texture.jpg",
+      "author": "Archiwriter1",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "expected_has_crack": null,
+      "label_basis": "推理前查看原图，存在模板纹理、接缝及细线，不能可靠排除细裂缝；只作观察，不计入正确排除率或误报率。",
+      "size_wh": [
+        5568,
+        3712
+      ],
+      "bytes": 10583548,
+      "sha256": "148ed9074bd748b169c4e684c13219bea815e95932a0fddc8548c56fa5859b3f"
+    }
+  ]
+}

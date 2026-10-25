@@ -1,0 +1,15 @@
+{
+  "checkpoint": "outputs\\run_20261024_174146_218961\\crack_segmentation_model.pth",
+  "image_count": 68,
+  "tp": 8957820,
+  "fp": 1095295,
+  "fn": 2627808,
+  "iou": 0.7064012611700268,
+  "precision": 0.8910491922155471,
+  "recall": 0.7731838101482285,
+  "f1": 0.8279427321633239,
+  "wall_seconds_including_model_load": 80.44569980000233,
+  "expected_training_validation_iou": 0.7064012611700268,
+  "provenance": "Reload verification of saved best weights using the same 68 validation IDs and prediction protocol.",
+  "iou_matches_training_validation": true
+}

@@ -1,0 +1,27 @@
+{
+  "model": "SMP U-Net / ResNet34",
+  "model_epoch": 20,
+  "checkpoint_directory": "outputs/run_20261024_181934_060182",
+  "weight_sha256": "0dbddc203bee5511a2e7b67438c09ca7b01b42305e986b8214ab36bdc6e6e692",
+  "split": "val",
+  "split_manifest": "data/val_ids.txt",
+  "image_count": 68,
+  "aggregation": "global pixel TP/FP/FN over complete images",
+  "metrics": {
+    "iou": 0.7378894749145102,
+    "precision": 0.8557297228507382,
+    "recall": 0.8427274723476362,
+    "f1": 0.8491788293393149
+  },
+  "f1_derivation": "2 * precision * recall / (precision + recall)",
+  "pixel_probability_threshold": 0.5,
+  "ground_truth_gray_threshold": 128,
+  "image_presence_fraction_threshold": 0.003,
+  "tile_size": 512,
+  "resize_before_inference": false,
+  "split_method": "original-image random split; seed=1; 322/68/68; scene independence not verified",
+  "source_artifact": "logs/unet_resnet34_validation.txt",
+  "source_sha256": "d6016d79eb0ca31602a65050c799fb37476e6ebebf29d1bd99a9085a49df52cc",
+  "source_kind": "saved evaluation terminal output",
+  "scope": "validation set used for model selection, separate from final held-out test"
+}

@@ -1,0 +1,14 @@
+# Store text consistently across Windows and Linux.
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Preserve documented image assets as binary files.
+*.png binary
+*.jpg binary
+*.JPG binary
+*.jpeg binary

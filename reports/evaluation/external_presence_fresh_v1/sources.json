@@ -1,0 +1,116 @@
+{
+  "selection": "六张外部照片，推理前根据发布页信息和图像内容暂定3阳性和3阴性。施工槽或接缝本身不计裂缝。标签未经专家核验，样例未按预测结果筛选，未用于本项目训练或此前阈值选择；与预训练来源是否重合尚未核验。",
+  "labels_frozen_before_inference": true,
+  "threshold_rate": 0.003,
+  "pixel_probability_threshold": 0.5,
+  "model_directory": "outputs/run_20261024_181934_060182",
+  "images": [
+    {
+      "id": "crack_sidewalk_ewing",
+      "path": "data/raw/external_presence_fresh_v1/images/crack_sidewalk_ewing.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:2017-09-05_10_53_35_Large_crack_in_very_old_concrete_sidewalk_along_Theresa_Street_in_Ewing_Township,_Mercer_County,_New_Jersey.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/2017-09-05_10_53_35_Large_crack_in_very_old_concrete_sidewalk_along_Theresa_Street_in_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg",
+      "author": "Famartin",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "expected_has_crack": true,
+      "label_basis": "发布页描述和图像内容显示老旧混凝土人行道存在不规则张开裂缝，含树影、草与骨料。推理前暂定为阳性，未经专家核验。",
+      "size_wh": [
+        3264,
+        2448
+      ],
+      "original_mode": "RGB",
+      "bytes": 4527607,
+      "sha256": "27d10a0a0f0e3ea0d295f451db26340a435e3e20d59cfd46621adf99b7fa4263"
+    },
+    {
+      "id": "crack_hairline",
+      "path": "data/raw/external_presence_fresh_v1/images/crack_hairline.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hairline_cracks.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Hairline_cracks.jpg",
+      "author": "Prygpt",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "expected_has_crack": true,
+      "label_basis": "发布页描述和图像内容显示抛光混凝土地面存在细微网状裂缝。推理前暂定为阳性，未经专家核验。",
+      "size_wh": [
+        2000,
+        1328
+      ],
+      "original_mode": "RGB",
+      "bytes": 326429,
+      "sha256": "2b840a709f24588ce02e5a461f25d5e29142f72a45266aa38d925877cac1a62a"
+    },
+    {
+      "id": "crack_bridge_nara",
+      "path": "data/raw/external_presence_fresh_v1/images/crack_bridge_nara.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Close_view_of_crack_in_concrete_on_east_side_of_highway_bridge_pier_no._2_-_NARA_-_294290.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Close_view_of_crack_in_concrete_on_east_side_of_highway_bridge_pier_no._2_-_NARA_-_294290.jpg",
+      "author": "Bureau of Reclamation / NARA; photographer unrecorded",
+      "license": "Public domain (PD-USGov on source page)",
+      "expected_has_crack": true,
+      "label_basis": "发布页说明和图像内容显示桥墩墙面下方存在横向不规则裂缝，为黑白历史照片。推理前暂定为阳性，未经专家核验。",
+      "size_wh": [
+        3000,
+        2145
+      ],
+      "original_mode": "L",
+      "bytes": 918431,
+      "sha256": "ffd98cd50b2faf850e142f76d38e04b7852d6c9769ab824d35a6da59245eb3d7"
+    },
+    {
+      "id": "no_crack_kerbing",
+      "path": "data/raw/external_presence_fresh_v1/images/no_crack_kerbing.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Concrete_kerbing_texture.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Concrete_kerbing_texture.jpg",
+      "author": "Titus Tscharntke",
+      "license": "Public domain (PD-author on source page)",
+      "expected_has_crack": false,
+      "label_basis": "根据发布页预览与原图内容，浅灰混凝土近景含砂孔、石点及边缘土和苔藓，未见明显裂缝。推理前暂定为阴性，未经专业现场确认。",
+      "size_wh": [
+        2560,
+        1920
+      ],
+      "original_mode": "RGB",
+      "bytes": 918971,
+      "sha256": "6642f0f8d663117852bfefa61ff153df2387f489454dedf9d7e10f8d6d1cb053"
+    },
+    {
+      "id": "candidate_texture08",
+      "path": "data/raw/external_presence_fresh_v1/images/candidate_texture08.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Texture_08.JPG",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Texture_08.JPG",
+      "author": "Clara.Hoke",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "expected_has_crack": false,
+      "label_basis": "原图中的直线平行暗槽暂视为加工槽或板材接缝，未见明显不规则裂缝。推理前暂定为阴性，把握为中等，不是专业标注。",
+      "size_wh": [
+        1280,
+        960
+      ],
+      "original_mode": "RGB",
+      "bytes": 547393,
+      "sha256": "5e2c83a4c080be5831c6fa6878d9d28505b10990f67b8922beb51889e2d82de8"
+    },
+    {
+      "id": "no_crack_concrete_texture",
+      "path": "data/raw/external_presence_fresh_v1/images/no_crack_concrete_texture.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Concrete_texture.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Concrete_texture.jpg",
+      "author": "Daniel Schwen",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "expected_has_crack": false,
+      "label_basis": "4368×2912原图中粗糙灰色混凝土近景未见明显连续裂缝。推理前暂定为阴性，不是专业标注。",
+      "size_wh": [
+        4368,
+        2912
+      ],
+      "original_mode": "RGB",
+      "bytes": 8268020,
+      "sha256": "82caba2b85e3bc6be40ed0f4f3cf021b266088634e5d3ef0e392e5e72bb909ce"
+    }
+  ],
+  "labels_frozen_at_local": "2026-10-24T20:25:48.572849+08:00"
+}

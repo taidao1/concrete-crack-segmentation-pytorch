@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-25",
+  "status": "completed_user_run",
+  "evidence": {
+    "execution_by": "user",
+    "source": "User-provided terminal output in this chat",
+    "assistant_ran_evaluation": false,
+    "assistant_checks": [
+      "Reviewed current final_test.py: reads test_ids.txt, frozen model and thresholds",
+      "Recomputed segmentation metrics from reported TP/FP/FN"
+    ]
+  },
+  "entrypoint": "final_test.py",
+  "dataset": {
+    "name": "Concrete Crack Segmentation Dataset v1",
+    "split": "test",
+    "manifest": "data/test_ids.txt",
+    "completed_images": 68,
+    "expected_images": 68,
+    "split_method": "Fixed original-image random split, seed=1, train/val/test=322/68/68",
+    "scene_independence_verified": false
+  },
+  "model": {
+    "architecture": "SMP U-Net",
+    "encoder": "resnet34",
+    "checkpoint_directory": "outputs/run_20261024_181934_060182",
+    "checkpoint_filename": "crack_segmentation_model.pth",
+    "epoch": 20,
+    "sha256_frozen_before_test": "0dbddc203bee5511a2e7b67438c09ca7b01b42305e986b8214ab36bdc6e6e692",
+    "runtime_device_config": "cuda"
+  },
+  "protocol": {
+    "exif_transpose": true,
+    "rgb_float_divisor": 255,
+    "normalization_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "normalization_std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "tile_size": 512,
+    "ordinary_stride": 512,
+    "last_window": "anchored at image boundary",
+    "overlap": "average sigmoid probabilities",
+    "pixel_threshold": 0.5,
+    "target_gray_threshold": 128,
+    "image_presence_threshold_rate": 0.003
+  },
+  "segmentation": {
+    "aggregation": "global cumulative pixel counts",
+    "tp": 8848419,
+    "fp": 1207311,
+    "fn": 1525766,
+    "iou": 0.7640134745977549,
+    "precision": 0.8799380054953743,
+    "recall": 0.8529266636367098,
+    "f1": 0.8662218124745013
+  },
+  "image_presence": {
+    "threshold_rate": 0.003,
+    "actual_positive_images": 68,
+    "actual_negative_images": 0,
+    "predicted_positive_images": 68,
+    "predicted_negative_images": 0,
+    "tp": 68,
+    "fp": 0,
+    "fn": 0,
+    "tn": 0,
+    "accuracy": 1,
+    "precision": 1,
+    "recall": 1,
+    "negative_false_positive_rate": null,
+    "note": "No true negative images: negative false-positive rate cannot be estimated; 100% does not establish general image classification accuracy."
+  },
+  "timing": {
+    "image_loop_seconds_reported": 76,
+    "reported_seconds_per_image": 1.13,
+    "scope": "User tqdm image loop; excludes model creation/loading; not pure model throughput."
+  }
+}
